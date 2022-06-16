@@ -7,6 +7,13 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/css/6-1-2.css">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/js/6-1-2.js"></script>
+
+    <script src="js/Tokyo.js"></script>
+    <script src="js/Niigata.js"></script>
+
 <style type="text/css">
   body{
     background-color: #7CFC00;
@@ -25,17 +32,13 @@
     font-weight: bold;
   }
 
-  #forecast{
+  .forecast{
     vertical-align: top;
     display: inline-block;
     text-align: center;
   }
 
   </style>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/js/6-1-2.js"></script>
 
   </head>
 
@@ -47,10 +50,30 @@
       <h2>明日の天気</h2>
       <div class="element_div">
         <p class="city">東京</p>
-        <div id="forecast">
+        <div class="forecast">
           <br>
+          <!-- 天気画像 -->
           <img id="weather_image_tokyo">
-          <p id="weather_image_tokyo"></p>
+          <!-- 天気文字 -->
+          <p id="weather_text_tokyo"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_tokyo"></p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>明日の天気</h2>
+      <div class="element_div">
+        <p class="city">新潟</p>
+        <div class="forecast">
+          <br>
+          <!-- 天気画像 -->
+          <img id="weather_image_niigata">
+          <!-- 天気文字 -->
+          <p id="weather_text_niigata"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_niigata"></p>
         </div>
       </div>
     </div>
