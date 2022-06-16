@@ -1,44 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
+    <meta charset="utf-8">
 
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/css/6-1-2.css">
 
 <style type="text/css">
-      body{
-        
-      }
-      .slider {
+  body{
+    background-color: #7CFC00;
+  }
+  .slider{
     position:relative;
-  z-index: 1;
-  /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
-  height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-}
-/*　背景画像設定　*/
+    z-index: 1;
+  }
+  .element_div{
+    display:flex;
+    padding-left: 30px;
+  }
+  .city{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+  }
 
-    .slider-item01 {
-        background:url(https://www.jma.go.jp/bosai/forecast/img/100.svg);
-    }
+  #forecast{
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+  }
 
-    .slider-item02 {
-        background:url(https://www.jma.go.jp/bosai/forecast/img/200.svg);
-    }
-
-    .slider-item03 {
-        background:url(https://www.jma.go.jp/bosai/forecast/img/300.svg);
-    }
-
-    .slider-item {
-        width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-        height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-        background-repeat: no-repeat;/*背景画像をリピートしない*/
-        background-position: center;/*背景画像の位置を中央に*/
-        background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
-    }
-
-    </style>
+  </style>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -48,21 +41,21 @@
 
   <body>
 
-  <div class="wrapper">
-    <div class="slider">
+  <div class="slider">
 
-      <p class="slider-item slider-item01">あいおうえ</p>
-      <p class="slider-item slider-item02">かきくけこ</p>
-      <p class="slider-item slider-item03">さしすせそ</p>
-
+    <div>
+      <h2>明日の天気</h2>
+      <div class="element_div">
+        <p class="city">東京</p>
+        <div id="forecast">
+          <br>
+          <img id="weather_image_tokyo">
+          <p id="weather_image_tokyo"></p>
+        </div>
+      </div>
     </div>
 
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  <!--/wrapper--></div>
+  </div>
 
   <script type="text/javascript">
   
@@ -82,12 +75,6 @@
           pauseOnHover: false,//マウスホバーで一時停止を無効
           pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
   });
-
-  //スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
-  $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
-      $('.slider').slick('slickPlay');
-  });
-    
     </script>
 
   </body>
