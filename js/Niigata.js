@@ -1,12 +1,12 @@
-// 東京(130000)の予報を取得
-let url_tokyo = "https://www.jma.go.jp/bosai/forecast/data/forecast/130000.json";
+// 新潟(150000)の予報を取得
+let url_niigata = "https://www.jma.go.jp/bosai/forecast/data/forecast/150000.json";
 
-fetch(url_tokyo)
+fetch(url_niigata)
     .then(function(response) {
         return response.json();
     })
     .then(function(weather) {
-        console.log("東京:");
+        console.log("新潟:");
         console.log(weather);
 
         let area = weather[0].timeSeries[0].areas[0];
