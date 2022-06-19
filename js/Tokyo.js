@@ -13,6 +13,6 @@ fetch(url_tokyo)
 
        // 画面に書き出す
         document.getElementById("weather_image_tokyo").src = "https://www.jma.go.jp/bosai/forecast/img/"+ area.weatherCodes[1] +".svg";
-        document.getElementById("weather_text_tokyo").textContent = area.weathers[1];
+        document.getElementById("weather_text_tokyo").textContent = WeatherText(area.weatherCodes[1]);
         document.getElementById("weather_degrees_tokyo").textContent = "～" + weather[0].timeSeries[2].areas[0].temps[1] + "℃";
     });

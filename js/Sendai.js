@@ -13,6 +13,6 @@ fetch(url_sendai)
 
        // 画面に書き出す
         document.getElementById("weather_image_sendai").src = "https://www.jma.go.jp/bosai/forecast/img/"+ area.weatherCodes[1] +".svg";
-        document.getElementById("weather_text_sendai").textContent = area.weathers[1];
+        document.getElementById("weather_text_sendai").textContent = WeatherText(area.weatherCodes[1]);
         document.getElementById("weather_degrees_sendai").textContent = "～" + weather[0].timeSeries[2].areas[0].temps[1] + "℃";
     });
