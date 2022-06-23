@@ -1,359 +1,393 @@
 function WeatherImage(weathercode) {
 
+    var ImageArray = [
+        "https://www.jma.go.jp/bosai/forecast/img/100.svg", // 晴
+        "https://www.jma.go.jp/bosai/forecast/img/101.svg", // 晴 時々 曇
+        "https://www.jma.go.jp/bosai/forecast/img/102.svg", // 晴 一時 雨
+        "https://www.jma.go.jp/bosai/forecast/img/104.svg", // 晴 一時 雪
+        "https://www.jma.go.jp/bosai/forecast/img/110.svg", // 晴 後 時々曇
+        "https://www.jma.go.jp/bosai/forecast/img/112.svg", // 晴 後 一時雨
+        "https://www.jma.go.jp/bosai/forecast/img/115.svg", // 晴 後 一時雪
+        "https://www.jma.go.jp/bosai/forecast/img/118.svg", // 晴 後 雨か雪
+        "https://www.jma.go.jp/bosai/forecast/img/200.svg", // 曇
+        "https://www.jma.go.jp/bosai/forecast/img/201.svg", // 曇 時々 晴
+        "https://www.jma.go.jp/bosai/forecast/img/202.svg", // 曇 一時 雨
+        "https://www.jma.go.jp/bosai/forecast/img/204.svg", // 曇 一時 雪
+        "https://www.jma.go.jp/bosai/forecast/img/210.svg", // 曇後 時々 晴
+        "https://www.jma.go.jp/bosai/forecast/img/212.svg", // 曇後 一時 雨
+        "https://www.jma.go.jp/bosai/forecast/img/215.svg", // 曇 後 一時雪
+        "https://www.jma.go.jp/bosai/forecast/img/300.svg", // 雨
+        "https://www.jma.go.jp/bosai/forecast/img/301.svg", // 雨時々晴
+        "https://www.jma.go.jp/bosai/forecast/img/302.svg", // 雨時々止む
+        "https://www.jma.go.jp/bosai/forecast/img/303.svg", // 雨時々雪
+        "https://www.jma.go.jp/bosai/forecast/img/308.svg", // 雨で暴風を伴う
+        "https://www.jma.go.jp/bosai/forecast/img/311.svg", // 雨 のち 晴
+        "https://www.jma.go.jp/bosai/forecast/img/313.svg", // 雨 のち 曇
+        "https://www.jma.go.jp/bosai/forecast/img/314.svg", // 雨 のち 時々雪
+        "https://www.jma.go.jp/bosai/forecast/img/400.svg", // 雪
+        "https://www.jma.go.jp/bosai/forecast/img/411.svg", // 雪 のみ 晴
+        "https://www.jma.go.jp/bosai/forecast/img/413.svg", // 雪 のみ 曇
+        "https://www.jma.go.jp/bosai/forecast/img/401.svg", // 雪 時々 晴
+        "https://www.jma.go.jp/bosai/forecast/img/402.svg", // 雪時々止む
+        "https://www.jma.go.jp/bosai/forecast/img/403.svg", // 雪 時々 雨
+        "https://www.jma.go.jp/bosai/forecast/img/406.svg", // 大雪
+        "https://www.jma.go.jp/bosai/forecast/img/414.svg", // 雪 のみ 雨
+    ];
+
     switch (weathercode) {
         case '100':
-            return "https://www.jma.go.jp/bosai/forecast/img/100.svg";
+            return ImageArray[0];
             break;
         case '101':
-            return "https://www.jma.go.jp/bosai/forecast/img/101.svg";
+            return ImageArray[1];
             break;
         case '102':
-            return "https://www.jma.go.jp/bosai/forecast/img/102.svg";
+            return ImageArray[2];
             break;
         case '103':
-            return "https://www.jma.go.jp/bosai/forecast/img/102.svg";
+            return ImageArray[2];
             break;
         case '104':
-            return "https://www.jma.go.jp/bosai/forecast/img/104.svg";
+            return ImageArray[3];
             break;
         case '105':
-            return "https://www.jma.go.jp/bosai/forecast/img/104.svg";
+            return ImageArray[3];
             break;
         case '106':
-            return "https://www.jma.go.jp/bosai/forecast/img/102.svg";
+            return ImageArray[2];
             break;
         case '107':
-            return "https://www.jma.go.jp/bosai/forecast/img/102.svg";
+            return ImageArray[2];
             break;
         case '108':
-            return "https://www.jma.go.jp/bosai/forecast/img/102.svg";
+            return ImageArray[2];
             break;
         case '110':
-            return "https://www.jma.go.jp/bosai/forecast/img/110.svg";
+            return ImageArray[4];
             break;
         case '111':
-            return "https://www.jma.go.jp/bosai/forecast/img/110.svg";
+            return ImageArray[4];
             break;
         case '112':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '113':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '114':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '115':
-            return "https://www.jma.go.jp/bosai/forecast/img/115.svg";
+            return ImageArray[6];
             break;
         case '116':
-            return "https://www.jma.go.jp/bosai/forecast/img/115.svg";
+            return ImageArray[6];
             break;
         case '117':
-            return "https://www.jma.go.jp/bosai/forecast/img/115.svg";
+            return ImageArray[6];
             break;
         case '118':
-            return "https://www.jma.go.jp/bosai/forecast/img/118.svg";
+            return ImageArray[5];
             break;
         case '119':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '120':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '121':
-            return "https://www.jma.go.jp/bosai/forecast/img/102.svg";
+            return ImageArray[2];
             break;
         case '122':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '123':
-            return "https://www.jma.go.jp/bosai/forecast/img/100.svg";
+            return ImageArray[0];
             break;
         case '124':
-            return "https://www.jma.go.jp/bosai/forecast/img/100.svg";
+            return ImageArray[0];
             break;
         case '125':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '126':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '127':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '128':
-            return "https://www.jma.go.jp/bosai/forecast/img/112.svg";
+            return ImageArray[5];
             break;
         case '130':
-            return "https://www.jma.go.jp/bosai/forecast/img/100.svg";
+            return ImageArray[0];
             break;
         case '131':
-            return "https://www.jma.go.jp/bosai/forecast/img/100.svg";
+            return ImageArray[0];
             break;
         case '132':
-            return "https://www.jma.go.jp/bosai/forecast/img/101.svg";
+            return ImageArray[1];
             break;
         case '140':
-            return "https://www.jma.go.jp/bosai/forecast/img/102.svg";
+            return ImageArray[2];
             break;
         case '160':
-            return "https://www.jma.go.jp/bosai/forecast/img/104.svg";
+            return ImageArray[3];
             break;
         case '170':
-            return "https://www.jma.go.jp/bosai/forecast/img/104.svg";
+            return ImageArray[3];
             break;
         case '181':
-            return "https://www.jma.go.jp/bosai/forecast/img/115.svg";
+            return ImageArray[6];
             break;
         case '200':
-            return "https://www.jma.go.jp/bosai/forecast/img/200.svg";
+            return ImageArray[8];
             break;
         case '201':
-            return "https://www.jma.go.jp/bosai/forecast/img/201.svg";
+            return ImageArray[9];
             break;
         case '202':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '203':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '204':
-            return "https://www.jma.go.jp/bosai/forecast/img/204.svg";
+            return ImageArray[11];
             break;
         case '205':
-            return "https://www.jma.go.jp/bosai/forecast/img/204.svg";
+            return ImageArray[11];
             break;
         case '206':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '207':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '208':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '209':
-            return "https://www.jma.go.jp/bosai/forecast/img/200.svg";
+            return ImageArray[8];
             break;
         case '210':
-            return "https://www.jma.go.jp/bosai/forecast/img/210.svg";
+            return ImageArray[12];
             break;
         case '211':
-            return "https://www.jma.go.jp/bosai/forecast/img/210.svg";
+            return ImageArray[12];
             break;
         case '212':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '213':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '214':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '215':
-            return "https://www.jma.go.jp/bosai/forecast/img/215.svg";
+            return ImageArray[14];
             break;
         case '216':
-            return "https://www.jma.go.jp/bosai/forecast/img/215.svg";
+            return ImageArray[14];
             break;
         case '217':
-            return "https://www.jma.go.jp/bosai/forecast/img/215.svg";
+            return ImageArray[14];
             break;
         case '218':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '219':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '220':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '221':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '222':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '223':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '224':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '225':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '226':
-            return "https://www.jma.go.jp/bosai/forecast/img/212.svg";
+            return ImageArray[13];
             break;
         case '228':
-            return "https://www.jma.go.jp/bosai/forecast/img/215.svg";
+            return ImageArray[14];
             break;
         case '229':
-            return "https://www.jma.go.jp/bosai/forecast/img/215.svg";
+            return ImageArray[14];
             break;
         case '230':
-            return "https://www.jma.go.jp/bosai/forecast/img/215.svg";
+            return ImageArray[14];
             break;
         case '231':
-            return "https://www.jma.go.jp/bosai/forecast/img/200.svg";
+            return ImageArray[8];
             break;
         case '240':
-            return "https://www.jma.go.jp/bosai/forecast/img/202.svg";
+            return ImageArray[10];
             break;
         case '250':
-            return "https://www.jma.go.jp/bosai/forecast/img/204.svg";
+            return ImageArray[11];
             break;
         case '260':
-            return "https://www.jma.go.jp/bosai/forecast/img/204.svg";
+            return ImageArray[11];
             break;
         case '270':
-            return "https://www.jma.go.jp/bosai/forecast/img/204.svg";
+            return ImageArray[11];
             break;
         case '281':
-            return "https://www.jma.go.jp/bosai/forecast/img/215.svg";
+            return ImageArray[14];
             break;
         case '300':
-            return "https://www.jma.go.jp/bosai/forecast/img/300.svg";
+            return ImageArray[15];
             break;
         case '301':
-            return "https://www.jma.go.jp/bosai/forecast/img/301.svg";
+            return ImageArray[16];
             break;
         case '302':
-            return "https://www.jma.go.jp/bosai/forecast/img/302.svg";
+            return ImageArray[17];
             break;
         case '303':
-            return "https://www.jma.go.jp/bosai/forecast/img/303.svg";
+            return ImageArray[18];
             break;
         case '304':
-            return "https://www.jma.go.jp/bosai/forecast/img/300.svg";
+            return ImageArray[15];
             break;
         case '306':
-            return "https://www.jma.go.jp/bosai/forecast/img/300.svg";
+            return ImageArray[15];
             break;
         case '308':
-            return "https://www.jma.go.jp/bosai/forecast/img/308.svg";
+            return ImageArray[19];
             break;
         case '309':
-            return "https://www.jma.go.jp/bosai/forecast/img/303.svg";
+            return ImageArray[18];
             break;
         case '311':
-            return "https://www.jma.go.jp/bosai/forecast/img/311.svg";
+            return ImageArray[20];
             break;
         case '313':
-            return "https://www.jma.go.jp/bosai/forecast/img/313.svg";
+            return ImageArray[21];
             break;
         case '314':
-            return "https://www.jma.go.jp/bosai/forecast/img/314.svg";
+            return ImageArray[22];
             break;
         case '315':
-            return "https://www.jma.go.jp/bosai/forecast/img/314.svg";
+            return ImageArray[22];
             break;
         case '316':
-            return "https://www.jma.go.jp/bosai/forecast/img/311.svg";
+            return ImageArray[20];
             break;
         case '317':
-            return "https://www.jma.go.jp/bosai/forecast/img/313.svg";
+            return ImageArray[21];
             break;
         case '320':
-            return "https://www.jma.go.jp/bosai/forecast/img/311.svg";
+            return ImageArray[20];
             break;
         case '321':
-            return "https://www.jma.go.jp/bosai/forecast/img/313.svg";
+            return ImageArray[21];
             break;
         case '322':
-            return "https://www.jma.go.jp/bosai/forecast/img/303.svg";
+            return ImageArray[18];
             break;
         case '323':
-            return "https://www.jma.go.jp/bosai/forecast/img/311.svg";
+            return ImageArray[20];
             break;
         case '324':
-            return "https://www.jma.go.jp/bosai/forecast/img/311.svg";
+            return ImageArray[20];
             break;
         case '325':
-            return "https://www.jma.go.jp/bosai/forecast/img/311.svg";
+            return ImageArray[20];
             break;
         case '326':
-            return "https://www.jma.go.jp/bosai/forecast/img/314.svg";
+            return ImageArray[22];
             break;
         case '327':
-            return "https://www.jma.go.jp/bosai/forecast/img/314.svg";
+            return ImageArray[22];
             break;
         case '328':
-            return "https://www.jma.go.jp/bosai/forecast/img/300.svg";
+            return ImageArray[15];
             break;
         case '329':
-            return "https://www.jma.go.jp/bosai/forecast/img/300.svg";
+            return ImageArray[15];
             break;
         case '340':
-            return "https://www.jma.go.jp/bosai/forecast/img/400.svg";
+            return ImageArray[23];
             break;
         case '350':
-            return "https://www.jma.go.jp/bosai/forecast/img/300.svg";
+            return ImageArray[15];
             break;
         case '361':
-            return "https://www.jma.go.jp/bosai/forecast/img/411.svg";
+            return ImageArray[24];
             break;
         case '371':
-            return "https://www.jma.go.jp/bosai/forecast/img/413.svg";
+            return ImageArray[25];
             break;
         case '400':
-            return "https://www.jma.go.jp/bosai/forecast/img/400.svg";
+            return ImageArray[23];
             break;
         case '401':
-            return "https://www.jma.go.jp/bosai/forecast/img/401.svg";
+            return ImageArray[26];
             break;
         case '402':
-            return "https://www.jma.go.jp/bosai/forecast/img/402.svg";
+            return ImageArray[27];
             break;
         case '403':
-            return "https://www.jma.go.jp/bosai/forecast/img/403.svg";
+            return ImageArray[28];
             break;
         case '405':
-            return "https://www.jma.go.jp/bosai/forecast/img/400.svg";
+            return ImageArray[23];
             break;
         case '406':
-            return "https://www.jma.go.jp/bosai/forecast/img/406.svg";
+            return ImageArray[29];
             break;
         case '407':
-            return "https://www.jma.go.jp/bosai/forecast/img/406.svg";
+            return ImageArray[29];
             break;
         case '409':
-            return "https://www.jma.go.jp/bosai/forecast/img/403.svg";
+            return ImageArray[28];
             break;
         case '411':
-            return "https://www.jma.go.jp/bosai/forecast/img/411.svg";
+            return ImageArray[24];
             break;
         case '413':
-            return "https://www.jma.go.jp/bosai/forecast/img/413.svg";
+            return ImageArray[25];
             break;
         case '414':
-            return "https://www.jma.go.jp/bosai/forecast/img/414.svg";
+            return ImageArray[30];
             break;
         case '420':
-            return "https://www.jma.go.jp/bosai/forecast/img/411.svg";
+            return ImageArray[24];
             break;
         case '421':
-            return "https://www.jma.go.jp/bosai/forecast/img/413.svg";
+            return ImageArray[25];
             break;
         case '422':
-            return "https://www.jma.go.jp/bosai/forecast/img/414.svg";
+            return ImageArray[30];
             break;
         case '423':
-            return "https://www.jma.go.jp/bosai/forecast/img/414.svg";
+            return ImageArray[30];
             break;
         case '425':
-            return "https://www.jma.go.jp/bosai/forecast/img/400.svg";
+            return ImageArray[23];
             break;
         case '426':
-            return "https://www.jma.go.jp/bosai/forecast/img/400.svg";
+            return ImageArray[23];
             break;
         case '427':
-            return "https://www.jma.go.jp/bosai/forecast/img/400.svg";
+            return ImageArray[23];
             break;
         case '450':
-            return "https://www.jma.go.jp/bosai/forecast/img/400.svg";
+            return ImageArray[23];
             break;
         default:
             console.log(text);
