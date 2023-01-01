@@ -1,4 +1,5 @@
-function WeatherImage(weathercode) {
+// 天気画像
+function WeatherImage(WeatherCode) {
 
     var ImageArray = [
         "https://www.jma.go.jp/bosai/forecast/img/100.svg", // 晴
@@ -34,7 +35,7 @@ function WeatherImage(weathercode) {
         "https://www.jma.go.jp/bosai/forecast/img/414.svg", // 雪 のみ 雨
     ];
 
-    switch (weathercode) {
+    switch (WeatherCode) {
         case '100':
             return ImageArray[0];
             break;
