@@ -1,6 +1,10 @@
-function WeatherText(text) {
+// https://www.jma.go.jp/bosai/forecast/
+// デバックツールの Console に「Forecast.Const.TELOPS」で確認出来る
 
-    switch (text) {
+// 天気テキスト
+function WeatherText(WeatherCode) {
+
+    switch (WeatherCode) {
         case '100':
             return "晴";
             break;
