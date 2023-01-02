@@ -3,9 +3,6 @@ body{
   color: white;
   margin: 0;
 }
-h2{
-  font-size: 40px;
-}
 p{
   font-weight: bold;
   text-align: center;
@@ -25,7 +22,6 @@ img{
 }
 .element_div{
   display:flex;
-  padding-left: 30px;
 }
 .city{
   display: inline-block;

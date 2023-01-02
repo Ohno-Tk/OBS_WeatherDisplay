@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Plug in：slick -->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/css/6-1-2.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/js/6-1-2.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- js -->
+    <script src="../js/WeatherURL.js"></script>
+    <script src="../js/WeatherImage.js"></script>
+    <script src="../js/WeatherText.js"></script>
+    <script src="js/Hyogo.js"></script>
+    <script src="js/Kyoto.js"></script>
+    <script src="js/Nara.js"></script>
+    <script src="js/Osaka.js"></script>
+    <script src="js/Shiga.js"></script>
+    <script src="js/Wakayama.js"></script>
+
+  </head>
+
+  <body>
+    <div class="slider">
+      <div class="element_div">
+        <p class="city">滋賀</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Shiga">
+          <!-- 天気文字 -->
+          <p id="weather_text_Shiga"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Shiga"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">京都</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Kyoto">
+          <!-- 天気文字 -->
+          <p id="weather_text_Kyoto"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Kyoto"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">大阪</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Osaka">
+          <!-- 天気文字 -->
+          <p id="weather_text_Osaka"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Osaka"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">兵庫</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Hyogo">
+          <!-- 天気文字 -->
+          <p id="weather_text_Hyogo"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Hyogo"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">奈良</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Nara">
+          <!-- 天気文字 -->
+          <p id="weather_text_Nara"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Nara"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">和歌山</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Wakayama">
+          <!-- 天気文字 -->
+          <p id="weather_text_Wakayama"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Wakayama"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/SlideShow.js" async></script>
+  </body>
+</html>

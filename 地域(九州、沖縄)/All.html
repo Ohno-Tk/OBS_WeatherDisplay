@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Plug in：slick -->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/css/6-1-2.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/js/6-1-2.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- js -->
+    <script src="../js/WeatherURL.js"></script>
+    <script src="../js/WeatherImage.js"></script>
+    <script src="../js/WeatherText.js"></script>
+    <script src="js/Fukuoka.js"></script>
+    <script src="js/Kagoshima.js"></script>
+    <script src="js/Kumamoto.js"></script>
+    <script src="js/Miyazaki.js"></script>
+    <script src="js/Nagasaki.js"></script>
+    <script src="js/Oita.js"></script>
+    <script src="js/Okinawa.js"></script>
+    <script src="js/Saga.js"></script>
+    <script src="js/Yamaguchi.js"></script>
+
+  </head>
+
+  <body>
+    <div class="slider">
+      <div class="element_div">
+        <p class="city">山口</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Yamaguchi">
+          <!-- 天気文字 -->
+          <p id="weather_text_Yamaguchi"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Yamaguchi"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">福岡</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Fukuoka">
+          <!-- 天気文字 -->
+          <p id="weather_text_Fukuoka"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Fukuoka"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">大分</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Oita">
+          <!-- 天気文字 -->
+          <p id="weather_text_Oita"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Oita"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">長崎</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Nagasaki">
+          <!-- 天気文字 -->
+          <p id="weather_text_Nagasaki"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Nagasaki"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">佐賀</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Saga">
+          <!-- 天気文字 -->
+          <p id="weather_text_Saga"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Saga"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">熊本</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Kumamoto">
+          <!-- 天気文字 -->
+          <p id="weather_text_Kumamoto"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Kumamoto"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">宮崎</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Miyazaki">
+          <!-- 天気文字 -->
+          <p id="weather_text_Miyazaki"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Miyazaki"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">鹿児島</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Kagoshima">
+          <!-- 天気文字 -->
+          <p id="weather_text_Kagoshima"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Kagoshima"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">沖縄</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Okinawa">
+          <!-- 天気文字 -->
+          <p id="weather_text_Okinawa"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Okinawa"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/SlideShow.js" async></script>
+  </body>
+</html>

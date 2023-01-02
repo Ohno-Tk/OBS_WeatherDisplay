@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Plug in：slick -->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/css/6-1-2.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/js/6-1-2.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- js -->
+    <script src="../js/WeatherURL.js"></script>
+    <script src="../js/WeatherImage.js"></script>
+    <script src="../js/WeatherText.js"></script>
+    <script src="js/Akita.js"></script>
+    <script src="js/Aomori.js"></script>
+    <script src="js/Fukushima.js"></script>
+    <script src="js/Iwate.js"></script>
+    <script src="js/Miyagi.js"></script>
+    <script src="js/Sapporo.js"></script>
+    <script src="js/Yamagata.js"></script>
+
+  </head>
+
+  <body>
+    <div class="slider">
+      <div class="element_div">
+        <p class="city">札幌</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Sapporo">
+          <!-- 天気文字 -->
+          <p id="weather_text_Sapporo"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Sapporo"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">青森</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Aomori">
+          <!-- 天気文字 -->
+          <p id="weather_text_Aomori"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Aomori"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">秋田</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Akita">
+          <!-- 天気文字 -->
+          <p id="weather_text_Akita"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Akita"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">岩手</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Iwate">
+          <!-- 天気文字 -->
+          <p id="weather_text_Iwate"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Iwate"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">宮城</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Miyagi">
+          <!-- 天気文字 -->
+          <p id="weather_text_Miyagi"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Miyagi"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">山形</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Yamagata">
+          <!-- 天気文字 -->
+          <p id="weather_text_Yamagata"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Yamagata"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">福島</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Fukushima">
+          <!-- 天気文字 -->
+          <p id="weather_text_Fukushima"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Fukushima"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../js/SlideShow.js" async></script>
+  </body>
+</html>
