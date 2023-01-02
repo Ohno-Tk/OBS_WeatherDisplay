@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Plug in：slick -->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/css/6-1-2.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/js/6-1-2.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- js -->
+    <script src="../js/WeatherURL.js"></script>
+    <script src="../js/WeatherImage.js"></script>
+    <script src="../js/WeatherText.js"></script>
+    <script src="js/Aichi.js"></script>
+    <script src="js/Gifu.js"></script>
+    <script src="js/Mie.js"></script>
+    <script src="js/Shizuoka.js"></script>
+
+  </head>
+
+  <body>
+    <div class="slider">
+      <div class="element_div">
+        <p class="city">静岡</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Shizuoka">
+          <!-- 天気文字 -->
+          <p id="weather_text_Shizuoka"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Shizuoka"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">愛知</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Aichi">
+          <!-- 天気文字 -->
+          <p id="weather_text_Aichi"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Aichi"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">岐阜</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Gifu">
+          <!-- 天気文字 -->
+          <p id="weather_text_Gifu"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Gifu"></p>
+        </div>
+      </div>
+
+      <div class="element_div">
+        <p class="city">三重</p>
+        <div class="forecast">
+          <!-- 天気画像 -->
+          <img id="weather_image_Mie">
+          <!-- 天気文字 -->
+          <p id="weather_text_Mie"></p>
+          <!-- 温度 -->
+          <p id="weather_degrees_Mie"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../js/SlideShow.js" async></script>
+  </body>
+</html>
