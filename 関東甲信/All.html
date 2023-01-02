@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Plug in：slick -->
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/css/6-1-2.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/js/6-1-2.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- js -->
+    <script src="js/common/WeatherURL.js"></script>
+    <script src="js/common/WeatherImage.js"></script>
+    <script src="js/common/WeatherText.js"></script>
+
+  </head>
+
+  <body>
+    <h2>明日の天気</h2>
+
+    <div class="slider">
+      <div>
+        <div class="element_div">
+          <p class="city">札幌　</p>
+          <div class="forecast">
+            <!-- 天気画像 -->
+            <img id="weather_image_sapporo">
+            <!-- 天気文字 -->
+            <p id="weather_text_sapporo"></p>
+            <!-- 温度 -->
+            <p id="weather_degrees_sapporo"></p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element_div">
+          <p class="city">仙台　</p>
+          <div class="forecast">
+            <!-- 天気画像 -->
+            <img id="weather_image_sendai">
+            <!-- 天気文字 -->
+            <p id="weather_text_sendai"></p>
+            <!-- 温度 -->
+            <p id="weather_degrees_sendai"></p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element_div">
+          <p class="city">東京　</p>
+          <div class="forecast">
+            <!-- 天気画像 -->
+            <img id="weather_image_tokyo">
+            <!-- 天気文字 -->
+            <p id="weather_text_tokyo"></p>
+            <!-- 温度 -->
+            <p id="weather_degrees_tokyo"></p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element_div">
+          <p class="city">新潟　</p>
+          <div class="forecast">
+            <!-- 天気画像 -->
+            <img id="weather_image_niigata">
+            <!-- 天気文字 -->
+            <p id="weather_text_niigata"></p>
+            <!-- 温度 -->
+            <p id="weather_degrees_niigata"></p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element_div">
+          <p class="city">大阪　</p>
+          <div class="forecast">
+            <!-- 天気画像 -->
+            <img id="weather_image_osaka">
+            <!-- 天気文字 -->
+            <p id="weather_text_osaka"></p>
+            <!-- 温度 -->
+            <p id="weather_degrees_osaka"></p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element_div">
+          <p class="city">福岡　</p>
+          <div class="forecast">
+            <!-- 天気画像 -->
+            <img id="weather_image_fukuoka">
+            <!-- 天気文字 -->
+            <p id="weather_text_fukuoka"></p>
+            <!-- 温度 -->
+            <p id="weather_degrees_fukuoka"></p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="element_div">
+          <p class="city">鹿児島</p>
+          <div class="forecast">
+            <!-- 天気画像 -->
+            <img id="weather_image_kagoshima">
+            <!-- 天気文字 -->
+            <p id="weather_text_kagoshima"></p>
+            <!-- 温度 -->
+            <p id="weather_degrees_kagoshima"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/SlideShow.js" async></script>
+  </body>
+</html>
