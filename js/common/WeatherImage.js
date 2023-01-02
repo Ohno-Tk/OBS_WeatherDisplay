@@ -26,13 +26,13 @@ function WeatherImage(WeatherCode) {
         "https://www.jma.go.jp/bosai/forecast/img/313.svg", // 雨 のち 曇
         "https://www.jma.go.jp/bosai/forecast/img/314.svg", // 雨 のち 時々雪
         "https://www.jma.go.jp/bosai/forecast/img/400.svg", // 雪
-        "https://www.jma.go.jp/bosai/forecast/img/411.svg", // 雪 のみ 晴
-        "https://www.jma.go.jp/bosai/forecast/img/413.svg", // 雪 のみ 曇
+        "https://www.jma.go.jp/bosai/forecast/img/411.svg", // 雪 後 晴
+        "https://www.jma.go.jp/bosai/forecast/img/413.svg", // 雪 後 曇
         "https://www.jma.go.jp/bosai/forecast/img/401.svg", // 雪 時々 晴
         "https://www.jma.go.jp/bosai/forecast/img/402.svg", // 雪時々止む
         "https://www.jma.go.jp/bosai/forecast/img/403.svg", // 雪 時々 雨
         "https://www.jma.go.jp/bosai/forecast/img/406.svg", // 大雪
-        "https://www.jma.go.jp/bosai/forecast/img/414.svg", // 雪 のみ 雨
+        "https://www.jma.go.jp/bosai/forecast/img/414.svg", // 雪 後 雨
     ];
 
     switch (WeatherCode) {

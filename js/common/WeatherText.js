@@ -297,10 +297,10 @@ function WeatherText(WeatherCode) {
             return "雨で雷を伴う";
             break;
         case '361':
-            return "雪か雨 のみ 晴";
+            return "雪か雨 後 晴";
             break;
         case '371':
-            return "雪か雨 のみ 曇";
+            return "雪か雨 後 曇";
             break;
         case '400':
             return "雪";
@@ -327,22 +327,22 @@ function WeatherText(WeatherCode) {
             return "雪一時雨";
             break;
         case '411':
-            return "雪 のみ 晴";
+            return "雪 後 晴";
             break;
         case '413':
-            return "雪 のみ 曇";
+            return "雪 後 曇";
             break;
         case '414':
-            return "雪 のみ 雨";
+            return "雪 後 雨";
             break;
         case '420':
-            return "朝の内雪 のみ 晴";
+            return "朝の内雪 後 晴";
             break;
         case '421':
-            return "朝の内雪 のみ 曇";
+            return "朝の内雪 後 曇";
             break;
         case '422':
-            return "朝の内雪 のみ 曇";
+            return "朝の内雪 後 曇";
             break;
         case '423':
             return "雪夕方から雨";
@@ -351,7 +351,7 @@ function WeatherText(WeatherCode) {
             return "雪一時強く降る";
             break;
         case '426':
-            return "雪 のみ みぞれ";
+            return "雪 後 みぞれ";
             break;
         case '427':
             return "雪一時みぞれ";

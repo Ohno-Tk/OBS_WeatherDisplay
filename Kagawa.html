@@ -14,7 +14,7 @@
 
   <body>
     <div class="element_div">
-      <p class="city">札幌</p>
+      <p class="city">香川</p>
       <div class="forecast">
         <!-- 天気画像 -->
         <img id="weather_image">
@@ -27,7 +27,7 @@
 
     <!-- 天気取得 -->
     <script>
-      fetch(WeatherURL(Place.Sapporo))
+      fetch(WeatherURL(Place.Kagawa))
       .then(function(response) {
           return response.json();
       })
@@ -36,7 +36,7 @@
 
           // ログ用
           console.log(weather);
-          console.log("札幌");
+          console.log("香川");
           console.log("報告日時："   + weather[0].reportDatetime);
           console.log("対象エリア：" + area.area.name);
           console.log("今日の天気：" + WeatherText(area.weatherCodes[0]));
