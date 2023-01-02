@@ -12,9 +12,11 @@ OBSのソース「ブラウザ」から追加してご利用ください。
 みなさまの活動のお力添えができれば幸いです。
 ご不明な点などがありましたら、Twitter等からお気軽にお問い合わせください。
 
+■利用規約
+・再配布はカスタマイズの有無に関わらず禁止です。
 
-大野 柊華
-■Twitter
+■各種リンク
+・Twitter
 https://twitter.com/OhnoToka
-■Youtube
+・Youtube
 https://www.youtube.com/@OhnoToka
